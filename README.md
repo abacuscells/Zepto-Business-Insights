@@ -57,7 +57,6 @@ zepto_inventory_analysis/
 ├── Dataset/
 │   └── zepto_utf-8.csv               # Product inventory data
 ├── zepto_business_insights.sql       # SQL analysis queries
-├── notebook.ipynb                    # Jupyter notebook with visualizations
 └── .gitignore                        # Git ignore rules
 ```
 
@@ -143,10 +142,14 @@ This project demonstrates:
 
 ## 📝 Notes
 
-- All prices in Indian Rupees (₹) it was in paise
+- All monetary values converted from paise to Indian Rupees (₹) during data cleaning.
 - Weight measured in grams (gms)
 - Discount percentages are applied uniformly across variants
 - Analysis based on snapshot data (point-in-time inventory)
 
+## 👤 Author
+
+- **Deepak Kumar**
+- **GitHub**: [@abacuscells](https://github.com/abacuscells)
 
 
