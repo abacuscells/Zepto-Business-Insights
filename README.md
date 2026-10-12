@@ -110,14 +110,20 @@ The analysis includes comprehensive data cleaning:
 - Bulk categories dominate inventory weight
 - Selective discounting on high-value items
 
+## 📌 Key Business Takeaways
+
+- **Catalog Health:** Out of 3,732 items, ~12% (453 SKUs) are currently out of stock, with high-demand premium products (MRP > ₹300) seeing disproportionate stockouts.
+- **Discount Patterns:** Discounting exceeds 15% predominantly in high-margin categories, while staple items maintain tighter pricing.
+- **Inventory Weight Concentration:** Bulk category SKUs drive the majority of warehouse storage weight, requiring localized fulfillment optimization.
+
 ## 📁 File Descriptions
 
 ### `zepto_business_insights.sql`
 - Table schema creation
 - Data exploration queries
 - Data cleaning operations
-- 8 business analysis queries
-- 133 lines of well-documented SQL
+- 10 business analysis queries
+- 160+ lines of well-documented SQL
 
 ### `Dataset/zepto_utf-8.csv`
 - Raw inventory data
