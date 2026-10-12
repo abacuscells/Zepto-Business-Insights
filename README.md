@@ -38,7 +38,7 @@ This project provides deep analytical insights into Zepto's inventory management
 
 ## 🔍 Key Analyses
 
-The project includes 8 comprehensive business questions answered through SQL queries:
+The project includes 10 comprehensive business questions answered through SQL queries:
 
 1. **Top Value Products** - Best-value products ranked by discount percentage
 2. **Premium Out-of-Stock Items** - High-value products currently unavailable (MRP > ₹300)
@@ -48,6 +48,8 @@ The project includes 8 comprehensive business questions answered through SQL que
 6. **Price Per Gram Analysis** - Value assessment for products ≥100g
 7. **Weight Categorization** - Product classification (Low/Medium/Bulk) based on weight
 8. **Inventory Weight Distribution** - Total inventory weight per category
+9. **Category Price Leaders** - Top 3 highest-priced products per category using `DENSE_RANK()`
+10. **Out-of-Stock Impact** - Estimated inventory revenue loss from out-of-stock SKUs
 
 ## 🗂️ Project Structure
 
