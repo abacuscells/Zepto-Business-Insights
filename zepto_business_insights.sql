@@ -131,3 +131,26 @@ SUM(weightingms * availablequantity) AS total_weight
 FROM zepto
 GROUP BY category
 ORDER BY total_weight DESC;
+
+-- Q9. Identify top 3 highest priced products within each category using Window Functions
+WITH RankedProducts AS (
+    SELECT 
+        category,
+        name,
+        discountedSellingPrice,
+        DENSE_RANK() OVER (PARTITION BY category ORDER BY discountedSellingPrice DESC) AS price_rank
+    FROM zepto
+)
+SELECT category, name, discountedSellingPrice, price_rank
+FROM RankedProducts
+WHERE price_rank <= 3;
+
+-- Q10. Estimated lost revenue value of currently out-of-stock items
+SELECT 
+    category,
+    COUNT(sku_id) AS out_of_stock_skus,
+    ROUND(SUM(discountedSellingPrice * quantity), 2) AS estimated_lost_stock_value
+FROM zepto
+WHERE outOfStock = TRUE
+GROUP BY category
+ORDER BY estimated_lost_stock_value DESC;
